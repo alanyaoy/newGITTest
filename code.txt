@@ -1,0 +1,1698 @@
+Microsoft Windows [Version 10.0.17134.165]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\yaoyu>git --version
+git version 2.18.0.windows.1
+
+C:\Users\yaoyu>git push --help
+
+C:\Users\yaoyu>pwd
+/c/Users/yaoyu
+
+C:\Users\yaoyu>
+
+---
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ git help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ git global -- help
+git: 'global' is not a git command. See 'git --help'.
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ git global -help
+git: 'global' is not a git command. See 'git --help'.
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ git --version
+git version 2.18.0.windows.1
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ git config --help
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ git config help
+error: key does not contain a section: help
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ git config --help
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ git add --help
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ git config --help
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ git help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ git clone ^M
+
+
+
+
+
+
+
+
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ git clone https://github.com/alanyaoy/newGITTest.git
+Cloning into 'newGITTest'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ cd..
+bash: cd..: command not found
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ cd c/users/yaoyu
+bash: cd: c/users/yaoyu: No such file or directory
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ dir
+3D\ Objects            Local\ Settings                                                                               ntuser.ini
+AppData                MicrosoftEdgeBackups                                                                          OneDrive
+Application\ Data      Music                                                                                         Pictures
+Contacts               My\ Documents                                                                                 PrintHood
+Cookies                NetHood                                                                                       Recent
+Desktop                newGITTest                                                                                    Saved\ Games
+Documents              NTUSER.DAT                                                                                    Searches
+Downloads              ntuser.dat.LOG1                                                                               SendTo
+Dropbox                ntuser.dat.LOG2                                                                               Start\ Menu
+Favorites              NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TM.blf                                       Templates
+IntelGraphicsProfiles  NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000001.regtrans-ms  Videos
+Links                  NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000002.regtrans-ms
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ cd ..
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/Users
+$ cd /yaoyu
+bash: cd: /yaoyu: No such file or directory
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/Users
+$ cd .. yaoyu
+bash: cd: too many arguments
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/Users
+$ cd yaoyu
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ cd newgittest
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        desktop.ini
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ dir
+desktop.ini  README.md
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        desktop.ini
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git add .
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+        new file:   desktop.ini
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git commit -m "change readme"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'yaoyu@DESKTOP-ANE9ABR.(none)')
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git commit -m 'change readme'
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'yaoyu@DESKTOP-ANE9ABR.(none)')
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git config --global user.name 'alanyaoy'
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git config --global user.email 'alanyaoy555@gmail.com'
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git commit -m 'change readme'
+[master 0bd66f0] change readme
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+ create mode 100644 desktop.ini
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 370 bytes | 370.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/alanyaoy/newGITTest.git
+   2c36ffc..0bd66f0  master -> master
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/alanyaoy/newGITTest
+   0bd66f0..c0ab361  master     -> origin/master
+Updating 0bd66f0..c0ab361
+Fast-forward
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git clone --help
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git help add
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git add -h
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod <(+/-)x>      override the executable bit of the listed files
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git config -h
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --default <value>     with --get, use default value when missing entry
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git add -h
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod <(+/-)x>      override the executable bit of the listed files
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git push -h
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --recurse-submodules[=<check|on-demand|no>]
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=<yes|no|if-asked>]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git push -help
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --recurse-submodules[=<check|on-demand|no>]
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=<yes|no|if-asked>]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ git add -help
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod <(+/-)x>      override the executable bit of the listed files
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ dir
+desktop.ini  README.md
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~/newgittest (master)
+$ cd ..
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ dir
+3D\ Objects        Desktop    IntelGraphicsProfiles  My\ Documents    ntuser.dat.LOG2                                                                               OneDrive      Searches
+AppData            Documents  Links                  NetHood          NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TM.blf                                       Pictures      SendTo
+Application\ Data  Downloads  Local\ Settings        newGITTest       NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000001.regtrans-ms  PrintHood     Start\ Menu
+Contacts           Dropbox    MicrosoftEdgeBackups   NTUSER.DAT       NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000002.regtrans-ms  Recent        Templates
+Cookies            Favorites  Music                  ntuser.dat.LOG1  ntuser.ini                                                                                    Saved\ Games  Videos
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ cd ..
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/Users
+$ dir
+All\ Users     defaultuser0          MSSQL$HOME_2016EXPAD            MSSQLFDLauncher$HOME_2016EXPAD  Public                       ReportServer$SQLEXPRESS
+Default        desktop.ini           MSSQL$SQLEXPRESS                MSSQLFDLauncher$SQLEXPRESS      ReportServer$HOME_2012EXPAD  SQLTELEMETRY$HOME_2016EXPAD
+Default\ User  MSSQL$HOME_2012EXPAD  MSSQLFDLauncher$HOME_2012EXPAD  MSSQLLaunchpad$HOME_2016EXPAD   ReportServer$HOME_2016EXPAD  yaoyu
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/Users
+$ cd ..
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c
+$ cd users
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users
+$ cd ..
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c
+$ cd users/yaoyu
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ git log
+fatal: not a git repository (or any of the parent directories): .git
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ cd newgittest
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git log
+commit c0ab3613ce3b07490236d2fbf8efc0322bfb26c9 (HEAD -> master, origin/master, origin/HEAD)
+Author: alanyaoy <42101549+alanyaoy@users.noreply.github.com>
+Date:   Sun Aug 5 10:25:44 2018 +1000
+
+    Update README.md
+
+commit 0bd66f0142354d330d8a6a2418c55e1682c029c7
+Author: alanyaoy <alanyaoy555@gmail.com>
+Date:   Sun Aug 5 10:23:12 2018 +1000
+
+    change readme
+
+commit 2c36ffccdac5f24644adfb8d7a072513895c8fa0
+Author: alanyaoy <42101549+alanyaoy@users.noreply.github.com>
+Date:   Sun Aug 5 09:27:50 2018 +1000
+
+    Initial commit
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        AtomText1
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        NotepadGit1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git add -A
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git commmit -m 'add notepadgit1'
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git push
+Everything up-to-date
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   NotepadGit1.txt
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git add .
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git comitt -m'add notepad1 again'
+git: 'comitt' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git push
+Everything up-to-date
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   NotepadGit1.txt
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ dir
+desktop.ini  NotepadGit1.txt  README.md
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git add .
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   NotepadGit1.txt
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git add -A
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   NotepadGit1.txt
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git add notepadgit1.txt
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   NotepadGit1.txt
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git commit -m 'add'
+[master 5af6de7] add
+ 1 file changed, 1 insertion(+)
+ create mode 100644 NotepadGit1.txt
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 330 bytes | 330.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/alanyaoy/newGITTest.git
+   c0ab361..5af6de7  master -> master
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ dir
+desktop.ini  NotepadGit1.txt  README.md
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ dir help
+dir: cannot access 'help': No such file or directory
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ dir -help
+dir: unknown option -- e
+Try 'dir --help' for more information.
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ dir -?
+dir: unknown option -- ?
+Try 'dir --help' for more information.
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ dir --help
+Usage: dir [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      scale sizes by SIZE before printing them; e.g.,
+                               '--block-size=M' prints sizes in units of
+                               1,048,576 bytes; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (default
+                               if omitted), 'auto', or 'never'; more info below
+  -d, --directory            list directories themselves, not their contents
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and/or -s, print human readable sizes
+                               (e.g., 1K 234M 2G)
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print entry names without quoting
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is 'ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, escape
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            with -l, show time as WORD instead of default
+                               modification time: atime or access or use (-u);
+                               ctime or status (-c); also use specified time
+                               as sort key if --sort=time (newest first)
+      --time-style=STYLE     with -l, show times using style STYLE:
+                               full-iso, long-iso, iso, locale, or +FORMAT;
+                               FORMAT is interpreted like in 'date'; if FORMAT
+                               is FORMAT1<newline>FORMAT2, then FORMAT1 applies
+                               to non-recent files and FORMAT2 to recent files;
+                               if STYLE is prefixed with 'posix-', STYLE
+                               takes effect only outside the POSIX locale
+  -t                         sort by modification time, newest first
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q or -b
+      --append-exe           append .exe if cygwin magic was needed
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Full documentation at: <http://www.gnu.org/software/coreutils/dir>
+or available locally via: info '(coreutils) dir invocation'
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ dir -a
+.  ..  .git  desktop.ini  NotepadGit1.txt  README.md
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ dir -all
+total 19
+drwxr-xr-x 1 yaoyu 197609  0 Aug  5 11:07 .
+drwxr-xr-x 1 yaoyu 197609  0 Aug  5 10:23 ..
+drwxr-xr-x 1 yaoyu 197609  0 Aug  5 11:13 .git
+-rw-r--r-- 1 yaoyu 197609 46 Aug  5 10:14 desktop.ini
+-rw-r--r-- 1 yaoyu 197609 21 Aug  5 11:07 NotepadGit1.txt
+-rw-r--r-- 1 yaoyu 197609 71 Aug  5 10:26 README.md
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ ls
+desktop.ini  NotepadGit1.txt  README.md
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ ls -ls
+total 3
+1 -rw-r--r-- 1 yaoyu 197609 46 Aug  5 10:14 desktop.ini
+1 -rw-r--r-- 1 yaoyu 197609 21 Aug  5 11:07 NotepadGit1.txt
+1 -rw-r--r-- 1 yaoyu 197609 71 Aug  5 10:26 README.md
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ ls-la
+bash: ls-la: command not found
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ ls -la
+total 19
+drwxr-xr-x 1 yaoyu 197609  0 Aug  5 11:07 ./
+drwxr-xr-x 1 yaoyu 197609  0 Aug  5 10:23 ../
+drwxr-xr-x 1 yaoyu 197609  0 Aug  5 11:13 .git/
+-rw-r--r-- 1 yaoyu 197609 46 Aug  5 10:14 desktop.ini
+-rw-r--r-- 1 yaoyu 197609 21 Aug  5 11:07 NotepadGit1.txt
+-rw-r--r-- 1 yaoyu 197609 71 Aug  5 10:26 README.md
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ dir
+desktop.ini  NotepadGit1.txt  README.md
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ dir -all
+total 19
+drwxr-xr-x 1 yaoyu 197609  0 Aug  5 11:07 .
+drwxr-xr-x 1 yaoyu 197609  0 Aug  5 10:23 ..
+drwxr-xr-x 1 yaoyu 197609  0 Aug  5 11:13 .git
+-rw-r--r-- 1 yaoyu 197609 46 Aug  5 10:14 desktop.ini
+-rw-r--r-- 1 yaoyu 197609 21 Aug  5 11:07 NotepadGit1.txt
+-rw-r--r-- 1 yaoyu 197609 71 Aug  5 10:26 README.md
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   NotepadGit1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git add .
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   NotepadGit1.txt
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git commit - m 'delete one line add two lines - Notepad1'
+error: pathspec '-' did not match any file(s) known to git.
+error: pathspec 'm' did not match any file(s) known to git.
+error: pathspec 'delete one line add two lines - Notepad1' did not match any file(s) known to git.
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git commit -m 'delete one line add two lines - Notepad1'
+[master 3b93175] delete one line add two lines - Notepad1
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 380 bytes | 380.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/alanyaoy/newGITTest.git
+   5af6de7..3b93175  master -> master
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   NotepadGit1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git add .
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   NotepadGit1.txt
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git comitt -m 'made change for vba'
+git: 'comitt' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git push
+Everything up-to-date
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   NotepadGit1.txt
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git commit -m 'add vba'
+[master 02ac93e] add vba
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 465 bytes | 465.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/alanyaoy/newGITTest.git
+   3b93175..02ac93e  master -> master
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git log
+commit 02ac93e5b7fc2ee304faa5eee03653002a2defad (HEAD -> master, origin/master, origin/HEAD)
+Author: alanyaoy <alanyaoy555@gmail.com>
+Date:   Sun Aug 5 13:50:26 2018 +1000
+
+    add vba
+
+commit 3b931753571b3d1e6f81234a994c06196c94579f
+Author: alanyaoy <alanyaoy555@gmail.com>
+Date:   Sun Aug 5 13:40:19 2018 +1000
+
+    delete one line add two lines - Notepad1
+
+commit 5af6de7486903ff7271830d37751f44cf57fe5b2
+Author: alanyaoy <alanyaoy555@gmail.com>
+Date:   Sun Aug 5 11:13:24 2018 +1000
+
+    add
+
+commit c0ab3613ce3b07490236d2fbf8efc0322bfb26c9
+Author: alanyaoy <42101549+alanyaoy@users.noreply.github.com>
+Date:   Sun Aug 5 10:25:44 2018 +1000
+
+    Update README.md
+
+commit 0bd66f0142354d330d8a6a2418c55e1682c029c7
+Author: alanyaoy <alanyaoy555@gmail.com>
+Date:   Sun Aug 5 10:23:12 2018 +1000
+
+    change readme
+
+commit 2c36ffccdac5f24644adfb8d7a072513895c8fa0
+Author: alanyaoy <42101549+alanyaoy@users.noreply.github.com>
+Date:   Sun Aug 5 09:27:50 2018 +1000
+
+    Initial commit
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ pwd
+/c/users/yaoyu/newgittest
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git config --lisyt
+error: unknown option `lisyt'
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --default <value>     with --get, use default value when missing entry
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager
+core.editor='C:\Program Files\Notepad++\notepad++.exe' -multiInst -notabbar -nosession -noPlugin
+user.name=alanyaoy
+user.email=alanyaoy555@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=https://github.com/alanyaoy/newGITTest.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ git config -h
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+    --default <value>     with --get, use default value when missing entry
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ cd ..
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ cd
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ pwd
+/c/Users/yaoyu
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ cd
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ pwd
+/c/Users/yaoyu
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ cd c
+bash: cd: c: No such file or directory
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ cd c/
+bash: cd: c/: No such file or directory
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ pwd
+/c/Users/yaoyu
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ cd ~
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ pwd
+/c/Users/yaoyu
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ cd \
+> pwd
+bash: cd: pwd: No such file or directory
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 ~
+$ cd /
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /
+$ pwd
+/
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /
+$ pwd
+/
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /
+$ cd ..
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /
+$ pwd
+/
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /
+$ cd users
+bash: cd: users: No such file or directory
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /
+$ pwd
+/
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /
+$ cd c
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c
+$ cd users
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users
+$ cd yaoyu
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ pwd
+/c/users/yaoyu
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ cd newgittest
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ pwd
+/c/users/yaoyu/newgittest
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ cd /
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /
+$ pwd
+/
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /
+$ cd c
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c
+$ touch -h
+touch: missing file operand
+Try 'touch --help' for more information.
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c
+$ touch -help
+touch: unknown option -- e
+Try 'touch --help' for more information.
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c
+$ git touch -h
+git: 'touch' is not a git command. See 'git --help'.
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c
+$ touch my.txt
+touch: cannot touch 'my.txt': Permission denied
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c
+$ cd users
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users
+$ cd yaoyu
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ ls
+'3D Objects'/         Desktop/     IntelGraphicsProfiles/  'My Documents'@    ntuser.dat.LOG2                                                                                OneDrive/       Searches/
+ AppData/             Documents/   Links/                   NetHood@          NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TM.blf                                        Pictures/       SendTo@
+'Application Data'@   Downloads/  'Local Settings'@         newGITTest/       NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000001.regtrans-ms   PrintHood@     'Start Menu'@
+ Contacts/            Dropbox/     MicrosoftEdgeBackups/    NTUSER.DAT        NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000002.regtrans-ms   Recent@         Templates@
+ Cookies@             Favorites/   Music/                   ntuser.dat.LOG1   ntuser.ini                                                                                    'Saved Games'/   Videos/
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ dir
+3D\ Objects        Desktop    IntelGraphicsProfiles  My\ Documents    ntuser.dat.LOG2                                                                               OneDrive      Searches
+AppData            Documents  Links                  NetHood          NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TM.blf                                       Pictures      SendTo
+Application\ Data  Downloads  Local\ Settings        newGITTest       NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000001.regtrans-ms  PrintHood     Start\ Menu
+Contacts           Dropbox    MicrosoftEdgeBackups   NTUSER.DAT       NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000002.regtrans-ms  Recent        Templates
+Cookies            Favorites  Music                  ntuser.dat.LOG1  ntuser.ini                                                                                    Saved\ Games  Videos
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ ls -la
+total 16638
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 10:23  ./
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:06  ../
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 12:07  .atom/
+drwxr-xr-x 1 yaoyu 197609        0 Dec  4  2017  .dotnet/
+-rw-r--r-- 1 yaoyu 197609       55 Aug  5 10:23  .gitconfig
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07 '3D Objects'/
+drwxr-xr-x 1 yaoyu 197609        0 Jul  1 18:57  AppData/
+lrwxrwxrwx 1 yaoyu 197609       30 Jun 29 19:39 'Application Data' -> /c/Users/yaoyu/AppData/Roaming/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  Contacts/
+lrwxrwxrwx 1 yaoyu 197609       58 Jun 29 19:39  Cookies -> /c/Users/yaoyu/AppData/Local/Microsoft/Windows/INetCookies/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  Desktop/
+drwxr-xr-x 1 yaoyu 197609        0 Jul  1 19:06  Documents/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 13:41  Downloads/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 07:53  Dropbox/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  Favorites/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  IntelGraphicsProfiles/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  Links/
+lrwxrwxrwx 1 yaoyu 197609       28 Jun 29 19:39 'Local Settings' -> /c/Users/yaoyu/AppData/Local/
+drwxr-xr-x 1 yaoyu 197609        0 Dec  2  2017  MicrosoftEdgeBackups/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  Music/
+lrwxrwxrwx 1 yaoyu 197609       24 Jun 29 19:39 'My Documents' -> /c/Users/yaoyu/Documents/
+lrwxrwxrwx 1 yaoyu 197609       66 Jun 29 19:39  NetHood -> '/c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 11:07  newGITTest/
+-rw-r--r-- 1 yaoyu 197609 12320768 Aug  5 09:05  NTUSER.DAT
+-rw-r--r-- 1 yaoyu 197609  3084288 Jun 29 19:39  ntuser.dat.LOG1
+-rw-r--r-- 1 yaoyu 197609   327680 Jun 29 19:39  ntuser.dat.LOG2
+-rw-r--r-- 1 yaoyu 197609    65536 Jun 29 19:39  NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TM.blf
+-rw-r--r-- 1 yaoyu 197609   524288 Jun 29 19:39  NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 yaoyu 197609   524288 Jun 29 19:39  NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000002.regtrans-ms
+-rw-r--r-- 1 yaoyu 197609       20 Jul  1 19:06  ntuser.ini
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  OneDrive/
+drwxr-xr-x 1 yaoyu 197609        0 Jul  1 19:06  Pictures/
+lrwxrwxrwx 1 yaoyu 197609       66 Jun 29 19:39  PrintHood -> '/c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 yaoyu 197609       55 Jun 29 19:39  Recent -> /c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07 'Saved Games'/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  Searches/
+lrwxrwxrwx 1 yaoyu 197609       55 Jun 29 19:39  SendTo -> /c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/SendTo/
+lrwxrwxrwx 1 yaoyu 197609       59 Jun 29 19:39 'Start Menu' -> '/c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 yaoyu 197609       58 Jun 29 19:39  Templates -> /c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/Templates/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  Videos/
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+rebase.autosquash=true
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+http.sslbackend=openssl
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+credential.helper=manager
+core.editor='C:\Program Files\Notepad++\notepad++.exe' -multiInst -notabbar -nosession -noPlugin
+user.name=alanyaoy
+user.email=alanyaoy555@gmail.com
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ git add -h
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod <(+/-)x>      override the executable bit of the listed files
+
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ git config --help
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ ls
+'3D Objects'/         Desktop/     IntelGraphicsProfiles/  'My Documents'@    ntuser.dat.LOG2                                                                                OneDrive/       Searches/
+ AppData/             Documents/   Links/                   NetHood@          NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TM.blf                                        Pictures/       SendTo@
+'Application Data'@   Downloads/  'Local Settings'@         newGITTest/       NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000001.regtrans-ms   PrintHood@     'Start Menu'@
+ Contacts/            Dropbox/     MicrosoftEdgeBackups/    NTUSER.DAT        NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000002.regtrans-ms   Recent@         Templates@
+ Cookies@             Favorites/   Music/                   ntuser.dat.LOG1   ntuser.ini                                                                                    'Saved Games'/   Videos/
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ ls -la
+total 17034
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 10:23  ./
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:06  ../
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 12:07  .atom/
+drwxr-xr-x 1 yaoyu 197609        0 Dec  4  2017  .dotnet/
+-rw-r--r-- 1 yaoyu 197609       55 Aug  5 10:23  .gitconfig
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07 '3D Objects'/
+drwxr-xr-x 1 yaoyu 197609        0 Jul  1 18:57  AppData/
+lrwxrwxrwx 1 yaoyu 197609       30 Jun 29 19:39 'Application Data' -> /c/Users/yaoyu/AppData/Roaming/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  Contacts/
+lrwxrwxrwx 1 yaoyu 197609       58 Jun 29 19:39  Cookies -> /c/Users/yaoyu/AppData/Local/Microsoft/Windows/INetCookies/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  Desktop/
+drwxr-xr-x 1 yaoyu 197609        0 Jul  1 19:06  Documents/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 13:41  Downloads/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 07:53  Dropbox/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  Favorites/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  IntelGraphicsProfiles/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  Links/
+lrwxrwxrwx 1 yaoyu 197609       28 Jun 29 19:39 'Local Settings' -> /c/Users/yaoyu/AppData/Local/
+drwxr-xr-x 1 yaoyu 197609        0 Dec  2  2017  MicrosoftEdgeBackups/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  Music/
+lrwxrwxrwx 1 yaoyu 197609       24 Jun 29 19:39 'My Documents' -> /c/Users/yaoyu/Documents/
+lrwxrwxrwx 1 yaoyu 197609       66 Jun 29 19:39  NetHood -> '/c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 11:07  newGITTest/
+-rw-r--r-- 1 yaoyu 197609 12320768 Aug  5 09:05  NTUSER.DAT
+-rw-r--r-- 1 yaoyu 197609  3162112 Jun 29 19:39  ntuser.dat.LOG1
+-rw-r--r-- 1 yaoyu 197609   655360 Jun 29 19:39  ntuser.dat.LOG2
+-rw-r--r-- 1 yaoyu 197609    65536 Jun 29 19:39  NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TM.blf
+-rw-r--r-- 1 yaoyu 197609   524288 Jun 29 19:39  NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 yaoyu 197609   524288 Jun 29 19:39  NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000002.regtrans-ms
+-rw-r--r-- 1 yaoyu 197609       20 Jul  1 19:06  ntuser.ini
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  OneDrive/
+drwxr-xr-x 1 yaoyu 197609        0 Jul  1 19:06  Pictures/
+lrwxrwxrwx 1 yaoyu 197609       66 Jun 29 19:39  PrintHood -> '/c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 yaoyu 197609       55 Jun 29 19:39  Recent -> /c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/Recent/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07 'Saved Games'/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  Searches/
+lrwxrwxrwx 1 yaoyu 197609       55 Jun 29 19:39  SendTo -> /c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/SendTo/
+lrwxrwxrwx 1 yaoyu 197609       59 Jun 29 19:39 'Start Menu' -> '/c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 yaoyu 197609       58 Jun 29 19:39  Templates -> /c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/Templates/
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07  Videos/
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ dir -all
+total 17034
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 10:23 .
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:06 ..
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 12:07 .atom
+drwxr-xr-x 1 yaoyu 197609        0 Dec  4  2017 .dotnet
+-rw-r--r-- 1 yaoyu 197609       55 Aug  5 10:23 .gitconfig
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07 3D\ Objects
+drwxr-xr-x 1 yaoyu 197609        0 Jul  1 18:57 AppData
+lrwxrwxrwx 1 yaoyu 197609       30 Jun 29 19:39 Application\ Data -> /c/Users/yaoyu/AppData/Roaming
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07 Contacts
+lrwxrwxrwx 1 yaoyu 197609       58 Jun 29 19:39 Cookies -> /c/Users/yaoyu/AppData/Local/Microsoft/Windows/INetCookies
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07 Desktop
+drwxr-xr-x 1 yaoyu 197609        0 Jul  1 19:06 Documents
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 13:41 Downloads
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 07:53 Dropbox
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07 Favorites
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07 IntelGraphicsProfiles
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07 Links
+lrwxrwxrwx 1 yaoyu 197609       28 Jun 29 19:39 Local\ Settings -> /c/Users/yaoyu/AppData/Local
+drwxr-xr-x 1 yaoyu 197609        0 Dec  2  2017 MicrosoftEdgeBackups
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07 Music
+lrwxrwxrwx 1 yaoyu 197609       24 Jun 29 19:39 My\ Documents -> /c/Users/yaoyu/Documents
+lrwxrwxrwx 1 yaoyu 197609       66 Jun 29 19:39 NetHood -> /c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/Network\ Shortcuts
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 11:07 newGITTest
+-rw-r--r-- 1 yaoyu 197609 12320768 Aug  5 09:05 NTUSER.DAT
+-rw-r--r-- 1 yaoyu 197609  3162112 Jun 29 19:39 ntuser.dat.LOG1
+-rw-r--r-- 1 yaoyu 197609   655360 Jun 29 19:39 ntuser.dat.LOG2
+-rw-r--r-- 1 yaoyu 197609    65536 Jun 29 19:39 NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TM.blf
+-rw-r--r-- 1 yaoyu 197609   524288 Jun 29 19:39 NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 yaoyu 197609   524288 Jun 29 19:39 NTUSER.DAT{089693af-7b80-11e8-a587-842190fb3d1e}.TMContainer00000000000000000002.regtrans-ms
+-rw-r--r-- 1 yaoyu 197609       20 Jul  1 19:06 ntuser.ini
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07 OneDrive
+drwxr-xr-x 1 yaoyu 197609        0 Jul  1 19:06 Pictures
+lrwxrwxrwx 1 yaoyu 197609       66 Jun 29 19:39 PrintHood -> /c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/Printer\ Shortcuts
+lrwxrwxrwx 1 yaoyu 197609       55 Jun 29 19:39 Recent -> /c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/Recent
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07 Saved\ Games
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07 Searches
+lrwxrwxrwx 1 yaoyu 197609       55 Jun 29 19:39 SendTo -> /c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/SendTo
+lrwxrwxrwx 1 yaoyu 197609       59 Jun 29 19:39 Start\ Menu -> /c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/Start\ Menu
+lrwxrwxrwx 1 yaoyu 197609       58 Jun 29 19:39 Templates -> /c/Users/yaoyu/AppData/Roaming/Microsoft/Windows/Templates
+drwxr-xr-x 1 yaoyu 197609        0 Aug  5 09:07 Videos
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu
+$ cd newgittest
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ touch myfile.txt
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ type myfile.txt
+bash: type: myfile.txt: not found
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ echo hello world > myfile.txt
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ type myfile.txt
+bash: type: myfile.txt: not found
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ type myfile.txt
+bash: type: myfile.txt: not found
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$ del myfile.txt
+bash: del: command not found
+
+yaoyu@DESKTOP-ANE9ABR MINGW64 /c/users/yaoyu/newgittest (master)
+$
