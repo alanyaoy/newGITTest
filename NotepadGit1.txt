@@ -1,3 +1,7 @@
 
 this is alan's file
-delete one line,add two lines
+delete one line,add two lines - this is a good comments
+Vicky want to join in today 
+ lrw = ActiveSheet.Cells(Rows.Count, 1).End(xlUp).Row
+ cl = ActiveSheet.Cells(1, Columns.Count).End(xlToLeft).Column
+					  
