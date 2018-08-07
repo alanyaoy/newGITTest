@@ -1,2 +1,0 @@
-this is 2nd line for myfile
-this is 3rd line for myfile
