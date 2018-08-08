@@ -1,2 +1,7 @@
  I am sam and I like ham.
+<<<<<<< HEAD
  This is my first hunter douglas Git file.
+=======
+ This is my first AWF Git file.
+Updated by Alan @home 21:09PM 8/8/2018
+>>>>>>> 64be938d768c3542a8f722687b62f798cd4eabe4
