@@ -1,2 +1,3 @@
  I am sam and I like ham.
- This is my first hd Git file.
+ This is my first AWF Git file.
+Updated by Alan @home 21:09PM 8/8/2018
