@@ -1,0 +1,50 @@
+git commit -m "rename NotepadGit1.txt to Notepad_f1.txt,myhdfile.txt to hdfile1.txt, delete file myfile.txt"
+git cofig --global uer.name "alanyaoy"
+git config --global uer.name "alanyaoy"
+git config --global user.email "alanyaoy555@gmail.com"
+git push
+git pull
+git push
+mode 80,100
+mode 120,70
+history
+doskey /history
+ls -la
+color help
+doskey /history >cmd.txt
+color 03
+color 02
+dir -all
+dir
+del test.tx
+del test.txt
+del text.txt
+file.txt
+del file.txt
+1.txt
+del .gitconfig
+del network_info.txt
+cd ..
+cd yaoa
+cd newgittest
+ls -la
+ls
+type notepadgit2.txt
+type notepadgit1.txt
+type myfile.txt
+git status
+git rm myfile.txt
+ls -la
+type code.txt
+type myhdfile.txt
+ls 
+git mv notpadgit1.txt notepad_f1.txt
+git mv notepadgit1 notepad_f1.txt
+git mv NotepadGit1 notepad_f1.txt
+git mv NotepadGit1.txt Notepad_f1.txt
+ls 
+git mv myhdfile.txt hdfile1.txt
+git status
+git add .
+ls
+git status
